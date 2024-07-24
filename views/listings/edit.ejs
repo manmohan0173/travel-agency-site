@@ -1,0 +1,37 @@
+<% layout("/layouts/boilerPlate") %>
+<link rel="stylesheet" href="/css/style.css">
+<body>
+    
+    
+<div class="row col-8 offset-2">
+    <form method="post" action="/listings/<%= listing._id %>?_method=PUT">
+        <h2>Edit Your Listing</h2>
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input name="listing[title]" type="text" class="form-control" value="<%= listing.title %>">
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea class="form-control" name="listing[description]" ><%= listing.description %></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-label">Image</label>
+            <input name="listing[image]" class="form-control" type="text"value="<%= listing.image %>" >
+        </div>
+        <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input name="listing[price]" class="form-control" type="number" value="<%= listing.price %>">
+        </div>
+        <div class="mb-3 col-4">
+            <label for="location" class="form-label">Location</label>
+            <input name="listing[location]" class="form-control" type="text" value="<%= listing.location %>">
+        </div>
+        <div class="mb-3 col-4">
+            <label for="country" class="form-label">Country</label>
+            <input name="listing[country]" class="form-control" type="text" value="<%= listing.country%>">
+        </div>
+        
+        <button class="mb-3 btn btn-dark">edit</button>
+    </form>
+</div>
+</body>

@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+.navbar{
+   
+    background-color: white;
+} 
+.fa-compass{
+    font-size: 3rem;
+    color: #fe424d;
+}
+.nav-link{
+    color: black!important;
+}
+footer{
+    
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 13px;
+    padding-bottom: 20px;
+    background-color: grey;
+    gap: 1rem;
+}
+.fa-brands{
+    margin-top: 20px; 
+    font-size: 1.5rem;
+}
+.copy{
+    font-size: larger;
+}
+.path a{
+    text-decoration: none;
+    color: black !important;
+}
+.path a:hover{
+    color: white !important;
+}
+.card{
+    border: none !important;
+    margin-bottom: 2rem;
+    
+}
+.card a{
+    text-decoration: none;
+    color: black;
+}
+.card-body{
+    padding: 0% !important;
+}
+.card-img-top{
+    height: 40vh!important;
+    border-radius: 20px;
+}

@@ -1,0 +1,24 @@
+<% layout("/layouts/boilerPlate") %>
+
+
+
+<body>
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-1 ">
+    <% for(let listing of allListings){ %>
+    <div class="card col" style="width: 20rem;">
+        <a href="/listings/<%= listing.id %>"><img src="<%= listing.image %>" class="card-img-top" alt="card-image" style="height: 20rem">
+        <div class="card-body mt-3">
+            <p>
+             <b><%= listing.title %></b></p>
+             <p>
+             &#8377 <%= listing.price %> /night
+            </p>
+        </div>
+        <a href="/listings/<%= listing.id%>"><button type="button" class="btn btn-dark">Explore</button></a>
+        </a>
+      </div>
+      <%}%>
+    </div>
+</body>
+
+
